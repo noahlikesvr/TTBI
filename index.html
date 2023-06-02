@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text to Binary Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <center>
+            <h1>Text to Binary Image Converter</h1><br>
+        </center>
+        <input type="file" id="fileInput" accept=".txt">
+        <center>
+            <h1>OR Input</h1>
+            <textarea rows="20" cols="45" style="border-radius: 7px;"></textarea>
+        </center>
+        <button onclick="convertTextToImage()" type="button">Convert</button>
+    </div>
+    <div id="canvasContainer">
+        <div id="imageContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
