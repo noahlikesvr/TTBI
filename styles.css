@@ -4,7 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: slategray;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #canvasContainer {
@@ -15,7 +15,7 @@ body {
   overflow: auto;
   width: 70vw;
   height: 100vh;
-  /* margin-bottom: 20px; */
+  /* min-height: 100vh; */
   background-color: whitesmoke;
 }
 
@@ -38,7 +38,7 @@ button {
   font-size: 25px;
   border-radius: 7px;
   border: 3px solid;
-  border-color: rgb(163, 163, 163);;
+  border-color: rgb(163, 163, 163);
   background-color: rgb(163, 163, 163);
   cursor: pointer;
 }
@@ -54,4 +54,49 @@ button:active {
   right: 0;
   top: 0;
   font-size: 25px;
+}
+
+#modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
+#modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#modalContent h1 {
+  margin-top: 0;
+}
+
+#modalContent p {
+  margin-bottom: 20px;
+}
+
+#modalContent button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
