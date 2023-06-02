@@ -103,6 +103,6 @@ button:active {
 
 #canvasContainer .buttons {
   position: absolute;
-  bottom: 1vh;
-  right: 31vw;
+  bottom: 0vh;
+  right: 30vw;
 }
