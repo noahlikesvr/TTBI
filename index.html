@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text to Binary Image Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="modalContainer">
+        <div id="modalContent">
+          <h1>Warning!</h1>
+          <p>This site does not work well on small/mobile devices.</p>
+          <button onclick="closeModal()">Close</button>
+        </div>
+      </div>
+      <center>
+        <h1>Text to Binary Image Converter</h1>
+        <br />
+      </center>
+      <form>
+        <input type="file" id="fileInput" accept=".txt" />
+        <center>
+          <h1>OR Input</h1>
+          <textarea rows="20" cols="45" style="border-radius: 7px"></textarea>
+        </center>
+        <div class="button-container">
+          <button onclick="convertTextToSVG()" type="button">Convert</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <center>
+        <h1 style="font-size: 30px">
+          Click to zoom in, CTRL+Click to zoom out
+        </h1>
+      </center>
+    </div>
+    <div id="canvasContainer">
+      <div id="imageContainer"></div>
+      <div class="buttons">
+        <button id="zoomInButton">+</button>
+        <button id="zoomOutButton">-</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
